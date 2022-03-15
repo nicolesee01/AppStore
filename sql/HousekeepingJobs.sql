@@ -1,3 +1,3 @@
-INSERT INTO customers VALUES ('Sweeping and Mopping');
-INSERT INTO customers VALUES ('Car Washing');
-INSERT INTO customers VALUES ('Toilet Cleaning');
+INSERT INTO cleaning VALUES ('Housekeeping');
+INSERT INTO cleaning VALUES ('Car Washing');
+INSERT INTO cleaning VALUES ('Gardening');
