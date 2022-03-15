@@ -27,4 +27,6 @@ urlpatterns = [
     path('edit/<str:id>', app.views.edit, name='edit'),
     path('home', app.views.home, name='home'),
     path('cleaning', app.views.cleaning, name='cleaning'),
+    path('pet_care', app.views.pet_care, name='pet_care'),
+    path('tuition', app.views.tuition, name='tuition'),
 ]
