@@ -92,4 +92,4 @@ def edit(request, id):
     return render(request, "app/edit.html", context)
 
 def home(request):
-    return render(request,'app/home.html',result_dict)
+    return render(request,'app/home.html')
