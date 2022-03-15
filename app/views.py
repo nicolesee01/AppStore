@@ -92,12 +92,4 @@ def edit(request, id):
     return render(request, "app/edit.html", context)
 
 def home(request):
-    """Shows the main page"""
-    
-    ## Use raw query to get a customer
-    with connection.cursor() as cursor:
-        cursor.execute("SELECT * FROM customers WHERE customerid = %s", [id])
-        customer = cursor.fetchone()
-    result_dict = {'cust': customer}
-
     return render(request,'app/home.html',result_dict)
