@@ -101,7 +101,7 @@ def cleaning(request):
     ## Use raw query to get a customer
     with connection.cursor() as cursor:
         cursor.execute("SELECT * FROM cleaning")
-        expertise = cursor.fetchone()
+        expertise = cursor.fetchall()
     result_dict = {'expert': expertise}
 
     return render(request,'app/cleaning.html',result_dict)
