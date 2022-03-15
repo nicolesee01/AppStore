@@ -100,4 +100,4 @@ def home(request):
         customer = cursor.fetchone()
     result_dict = {'cust': customer}
 
-    return render(request,'app/view.html',result_dict)
+    return render(request,'app/home.html',result_dict)
