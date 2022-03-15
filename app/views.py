@@ -100,7 +100,7 @@ def cleaning(request):
     
     ## Use raw query to get a customer
     with connection.cursor() as cursor:
-        cursor.execute("SELECT * FROM cleaning)
+        cursor.execute("SELECT * FROM cleaning")
         expertise = cursor.fetchone()
     result_dict = {'expert': expertise}
 
