@@ -93,3 +93,15 @@ def edit(request, id):
 
 def home(request):
     return render(request,'app/home.html')
+
+
+def cleaning(request):
+    """Shows the main page"""
+    
+    ## Use raw query to get a customer
+    with connection.cursor() as cursor:
+        cursor.execute("SELECT * FROM cleaning)
+        expertise = cursor.fetchone()
+    result_dict = {'expert': expertise}
+
+    return render(request,'app/home/cleaning.html',result_dict)
