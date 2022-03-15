@@ -104,4 +104,4 @@ def cleaning(request):
         expertise = cursor.fetchone()
     result_dict = {'expert': expertise}
 
-    return render(request,'app/home/cleaning.html',result_dict)
+    return render(request,'app/cleaning.html',result_dict)
