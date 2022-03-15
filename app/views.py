@@ -105,3 +105,25 @@ def cleaning(request):
     result_dict = {'expert': expertise}
 
     return render(request,'app/cleaning.html',result_dict)
+
+def pet_care(request):
+    """Shows the main page"""
+    
+    ## Use raw query to get a customer
+    with connection.cursor() as cursor:
+        cursor.execute("SELECT * FROM pet_care")
+        expertise = cursor.fetchall()
+    result_dict = {'expert': expertise}
+
+    return render(request,'app/pet_care.html',result_dict)
+
+def tuition(request):
+    """Shows the main page"""
+    
+    ## Use raw query to get a customer
+    with connection.cursor() as cursor:
+        cursor.execute("SELECT * FROM tuition")
+        expertise = cursor.fetchall()
+    result_dict = {'expert': expertise}
+
+    return render(request,'app/tuition.html',result_dict)
