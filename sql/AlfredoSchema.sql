@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS customers (
  CREATE TABLE job_category(
   PRIMARY KEY name VARCHAR(64));
  
- CREATE TABLE housekeeing(
+ CREATE TABLE cleaning(
   PRIMARY KEY name VARCHAR(64));
  
  CREATE TABLE pet_care(
