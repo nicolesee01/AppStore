@@ -90,3 +90,6 @@ def edit(request, id):
     context["status"] = status
  
     return render(request, "app/edit.html", context)
+
+def home(request):
+    return render(request,'app/home.html')
