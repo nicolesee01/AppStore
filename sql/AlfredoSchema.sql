@@ -13,17 +13,17 @@ CREATE TABLE IF NOT EXISTS customers (
  customerid VARCHAR(16) PRIMARY KEY,
  country VARCHAR(16) NOT NULL);
  
- CREATE TABLE job_category(
+ CREATE TABLE IF NOT EXISTS job_category(
   name VARCHAR(64) PRIMARY KEY);
  
- CREATE TABLE cleaning(
+ CREATE TABLE IF NOT EXISTS cleaning(
   name VARCHAR(64) PRIMARY KEY
   descrip VARCHAR(255));
  
- CREATE TABLE pet_care(
+ CREATE TABLE IF NOT EXISTS pet_care(
   name VARCHAR(64) PRIMARY KEY
   descrip VARCHAR(255));
  
- CREATE TABLE tuition(
+ CREATE TABLE IF NOT EXISTS tuition(
   name VARCHAR(64) PRIMARY KEY
   descrip VARCHAR(255));
