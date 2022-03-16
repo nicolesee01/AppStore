@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.db import connection
 
 # Create your views here.
-def index(request):
+def database(request):
     """Shows the main page"""
 
     ## Delete customer
@@ -18,7 +18,7 @@ def index(request):
 
     result_dict = {'records': customers}
 
-    return render(request,'app/index.html',result_dict)
+    return render(request,'app/database.html',result_dict)
 
 # Create your views here.
 def view(request, id):
