@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS customers (
  password VARCHAR(64) NOT NULL,
  first_name VARCHAR(64) NOT NULL,
  last_name VARCHAR(64) NOT NULL,
- gender VARCHAR(16) CHECK IN ('Male', 'Female'),
+ gender VARCHAR(6) NOT NULL CHECK (gender IN ('Male', 'Female'),
  email VARCHAR(64) UNIQUE NOT NULL,
  address VARCHAR(255) UNIQUE NOT NULL);
  
