@@ -21,10 +21,11 @@ import app.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', app.views.index, name='index'),
+    path('database', app.views.database, name='database'),
     path('add', app.views.add, name='add'),
     path('view/<str:id>', app.views.view, name='view'),
     path('edit/<str:id>', app.views.edit, name='edit'),
+    path('', app.views.home, name='home'),
     path('services', app.views.services, name='services'),
     path('cleaning', app.views.cleaning, name='cleaning'),
     path('pet_care', app.views.pet_care, name='pet_care'),
