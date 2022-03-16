@@ -28,9 +28,9 @@ done < ".env"
 URI="postgres://$DB_USER:$DB_PASSWORD@$DB_HOST:$DB_PORT/$DB_NAME"
 
 # Run the scripts to insert data.
-psql ${URI} -f sql/AppStoreClean.sql
+psql ${URI} -f sql/AlfredoClean.sql
 psql ${URI} -f sql/AlfredoSchema.sql
-psql ${URI} -f sql/AppStoreCustomers.sql
+psql ${URI} -f sql/AlfredoCustomers.sql
 psql ${URI} -f sql/CleaningJobs.sql
 psql ${URI} -f sql/TuitionJobs.sql
 psql ${URI} -f sql/PetCareJobs.sql
