@@ -18,12 +18,12 @@ CREATE TABLE IF NOT EXISTS customers (
  
  CREATE TABLE cleaning(
   name VARCHAR(64) PRIMARY KEY
-  descrip VARCHAR(64));
+  descrip VARCHAR(255));
  
  CREATE TABLE pet_care(
   name VARCHAR(64) PRIMARY KEY
-  descrip VARCHAR(64));
+  descrip VARCHAR(255));
  
  CREATE TABLE tuition(
   name VARCHAR(64) PRIMARY KEY
-  descrip VARCHAR(64));
+  descrip VARCHAR(255));
