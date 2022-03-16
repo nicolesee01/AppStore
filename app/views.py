@@ -94,6 +94,9 @@ def edit(request, id):
 def home(request):
     return render(request,'app/home.html')
 
+def login(request):
+    return render(request,'app/login.html')
+
 def services(request):
     return render(request,'app/services.html')
 
